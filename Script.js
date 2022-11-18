@@ -18,7 +18,7 @@ expandedNav.addEventListener('click', () => {
 
 navLinks.addEventListener('click', (event) => {
   if (event.target.className === 'hover_effect' && navLinks.classList.contains('mobile-menu')) {
-    mobileMenuClasses();
+    obileMenuClasses();
   }
 });
 
@@ -152,6 +152,7 @@ function popupWindowClasses() {
 //  Close window function
 function closePopupWindow() {
   const closePopup = document.querySelector('.popupClose');
+  const closePopup = document.querySelector('.popupClose');
   closePopup.addEventListener('click', () => {
     popupWindowClasses();
   });
@@ -207,7 +208,7 @@ function popupWindow(id) {
   </div>
   `;
   addTechnologies(id);
-  closePopupWindow();
+  closePopupWindow(id);
 }
 
 workSection.addEventListener('click', (event) => {
